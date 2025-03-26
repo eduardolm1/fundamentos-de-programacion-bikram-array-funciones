@@ -125,3 +125,29 @@ function multiplicacion(num1, num2) {
 arrayFunciones[0](68, 149)
 
 //23
+
+function ordenarArray2(array) {
+    return array.sort((a, b) => b - a);
+}
+ordenarArray2([284, 234, 203, 224, 295])
+
+//24
+function obtenerImpares(array) {
+    return array.filter(num => num % 2 !== 0);
+}
+obtenerImpares([71, 47, 15, 14, 18, 14, 55])
+
+//25
+function sumarArray(array) {
+    return array.reduce((total, numeroActual) => total + numeroActual, 0);
+}
+
+sumarArray([21, 8, 38, 22, 32, 42, 37, 26, 7])
+
+//26
+
+function multiplicarArray(array) {
+    return array.reduce((total, numeroActual) => total * numeroActual, 1);
+}
+
+multiplicarArray([25, 58, 71, 33, 43]) 
